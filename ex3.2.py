@@ -3,7 +3,6 @@ import timeit
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Function to modify the size value in each record
 def modify_size(data, num_records):
     for record in data[:num_records]:
         record['size'] = 35
@@ -34,7 +33,6 @@ plt.xlabel('Number of Records')
 plt.ylabel('Average Processing Time (seconds)')
 plt.title('Linear Regression Plot')
 plt.legend()
-
 
 plt.savefig('output.3.2.png')
 
