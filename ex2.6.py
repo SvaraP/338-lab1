@@ -27,6 +27,8 @@ total_time_1 = timeit.timeit(stmt="factorial1(100)", setup="from __main__ import
 print("for loop method (1000 runs) " + str(total_time_1))
 
 #factorial python funtion with integer n using a list comprehension
+# using list comprehension was very diffucult for me so i used Chatgpt to help me come up with the syntax for 
+#line 32 and 33 since I couldnt find information regaurding this in the notes.
 def factorial2(n):
     return 1 if n == 0 else n * factorial2(n - 1)
 
